@@ -17,11 +17,11 @@ _
 # Ejemplos de nombres inválidos
 
 ```
-0a									// No comienza con letra.
-$total							// No comienza con letra.
-precio*cantidad			// No consiste solo de letras y números.
-precio por unidad		// No consiste solo de letras y números.
-func								// Palabra reservada.
+0a			// No comienza con letra.
+$total			// No comienza con letra.
+precio*cantidad		// No consiste solo de letras y números.
+precio por unidad	// No consiste solo de letras y números.
+func			// Palabra reservada.
 ```
 
 
@@ -30,7 +30,7 @@ func								// Palabra reservada.
 ```
 indice_del_ciclo	// en Go, se prefiere: i
 fabricadeobjetos	// en Go, se prefiere: fabricaDeObjetos
-UNA_CONSTANTE			// en Go, se prefiere: UnaConstante
+UNA_CONSTANTE		// en Go, se prefiere: UnaConstante
 ```
 
 
