@@ -1,4 +1,4 @@
-Un nombre en Go tiene que comenzar con letra [a-z_A-Z] y luego puede tener
+Un nombre en Go tiene que comenzar con letra [a-z_A-Z] y luego puede tener <br>
 cualquier combinación de letras y números. El guión bajo se considera una letra.
 
 # Ejemplos de nombres válidos
