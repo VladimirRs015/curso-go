@@ -1,7 +1,9 @@
+# Nombres en Go
+
 Un nombre en Go tiene que comenzar con letra [a-z_A-Z] y luego puede tener <br>
 cualquier combinación de letras y números. El guión bajo se considera una letra.
 
-# Ejemplos de nombres válidos
+## Ejemplos de nombres válidos
 
 ```
 x
@@ -14,7 +16,7 @@ _
 ```
 
 
-# Ejemplos de nombres inválidos
+## Ejemplos de nombres inválidos
 
 ```
 0a			// No comienza con letra.
@@ -25,7 +27,7 @@ func			// Palabra reservada.
 ```
 
 
-# Ejemplos de nombres válidos pero NO idiomáticos en Go
+## Ejemplos de nombres válidos pero NO idiomáticos en Go
 
 ```
 indice_del_ciclo	// en Go, se prefiere: i
@@ -34,7 +36,7 @@ UNA_CONSTANTE		// en Go, se prefiere: UnaConstante
 ```
 
 
-# Estos nombres NO son iguales (mayúsculas y minúsculas importa)
+## Estos nombres NO son iguales (mayúsculas y minúsculas importa)
 
 ```
 procesarHTML
@@ -43,7 +45,7 @@ ProcesarHtml
 ```
 
 
-# Go Keywords (palabras claves, reservadas)
+## Go Keywords (palabras claves, reservadas)
 
 ```
 break        default      func         interface    select
@@ -54,7 +56,7 @@ continue     for          import       return       var
 ```
 
 
-# Go Pre-defined names (nombres pre-declarados, no reservados)
+## Go Pre-defined names (nombres pre-declarados, no reservados)
 
 ```
 Types:
