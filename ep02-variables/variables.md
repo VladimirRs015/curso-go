@@ -26,6 +26,16 @@ x := 1			// Nunca se incluye el tipo de dato.
 x, y := 1, 3.14		// Aquí, solo y es declarada ya que x ya existe en este bloque.
 ```
 
+## Valores por defecto (Zero Value) en Go
+
+Si una variable es declarada pero no se le asigna un valor, recibe el valor por defecto <br>
+(zero value) automáticamente. Los valores por defecto son:
+
+- Números: 0
+- Strings: ""
+- Boolean: false
+- otros: nil
+
 ## Tipos de datos en Go
 
 ```
