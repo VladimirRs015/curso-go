@@ -11,9 +11,9 @@ Al usar la palabra clave var, se puede declarar una variable en cualquier lugar 
 del programa.
 
 ```
-var x int = 1				// Declaración con nombre, tipo de dato y valor.
-var x = 1						// Declaración sin tipo de dato.
-var x								// Declaración sin tipo de dato ni valor asignado. 
+var x int = 1		// Declaración con nombre, tipo de dato y valor.
+var x = 1		// Declaración sin tipo de dato.
+var x			// Declaración sin tipo de dato ni valor asignado. 
 var x, y int = 1, 2	// Se pueden declarar múltiples variables a la vez.
 var x, y = 1, 3.14	// Se omite el tipo de dato si son tipos distintos por variable.
 ```
@@ -22,9 +22,19 @@ Las siguientes declaraciones no usan var, sino que usan el operador de declaraci
 corta := y solo pueden ocurrir dentro de una función.
 
 ```
-x := 1						// Nunca se incluye el tipo de dato.
+x := 1			// Nunca se incluye el tipo de dato.
 x, y := 1, 3.14		// Aquí, solo y es declarada ya que x ya existe en este bloque.
 ```
+
+## Valores por defecto (Zero Value) en Go
+
+Si una variable es declarada pero no se le asigna un valor, recibe el valor por defecto <br>
+(zero value) automáticamente. Los valores por defecto son:
+
+- Números: 0
+- Strings: ""
+- Boolean: false
+- otros: nil
 
 ## Tipos de datos en Go
 
