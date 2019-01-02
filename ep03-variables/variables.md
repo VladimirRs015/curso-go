@@ -19,24 +19,34 @@ var x, y = 1, 3.14	// Se omite el tipo de dato si son tipos distintos por variab
 ```
 
 Las siguientes declaraciones no usan var, sino que usan el operador de declaración <br>
-corta := y solo pueden ocurrir dentro de una función.
+corta, (:=), y solo pueden ocurrir dentro de una función.
 
 ```
 x := 1			// Nunca se incluye el tipo de dato.
 x, y := 1, 3.14		// Aquí, solo y es declarada ya que x ya existe en este bloque.
 ```
 
-## Valores por defecto (Zero Value) en Go
+Este tipo de declaración corta no permite especificar el tipo de dato, por lo que en casos<br>
+donde el tipo de dato es ambiguo, hay que usar var:
 
-Si una variable es declarada pero no se le asigna un valor, recibe el valor por defecto <br>
-(zero value) automáticamente. Los valores por defecto son:
+```
+i := 100		// Un int (entero)
+var i float64 = 100	// Un float64 (punto flotante 100.0)
 
-- Números: 0
-- Strings: ""
-- Boolean: false
-- otros: nil
+## Valor zero (Zero Value) en Go
 
-## Tipos de datos en Go
+Si una variable es declarada pero no se le asigna un valor, recibe lo que se conoce en Go como el<br>
+valor zero (zero value) automáticamente. Los valores zero para cada tipo de dato son:
+
+- Número: 0
+- String: ""
+- Booleano: false
+- Slice, function, channel, map, pointer: nil
+
+## Tipos de datos básicos en Go
+
+Estos son los tipos de datos básicos de Go. Existen otros tipos de datos más complejos<br>
+como array, map, slice, struct, function, pointer, y channel. Esos los veremos luego en el curso.
 
 ```
 bool
@@ -50,35 +60,3 @@ error
 string
 ```
 
-## Alcance (Scope) de variables en Go
-
-En Go, cada archivo de código pertenece a un paquete (package). Un paquete es una <br>
-unidad de codigo que sirve una función específica, como por ejemplo servir como punto <br>
-de entrada a un programa por ejecutar (package main) o como una librería de varables y <br>
-funciones para uso en otros programas (fmt, os, net/http).
-
-Cualquier variable declarada fuera de una función es global y visible en todo el paquete <br>
-que la contiene. Una variable declarada dentro de una función es local y visible solo <br>
-dentro de esa función. Una variable local con el mismo nombre que una global, solapa <br>
-y oculta a la variable global (shadowing), lo cual puede resultar en código confuso y <br>
-errores difíciles de encontrar.
-
-```
-package main
-
-import (
-	"fmt"
-)
-
-var global = "soy global"
-
-func saluda() {
-	global := "soy local" // global se declara nuevamente como local!
-	fmt.Println(global)
-}
-
-func main() {
-	saluda()
-	fmt.Println(global)
-}
-```
