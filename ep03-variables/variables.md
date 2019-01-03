@@ -11,9 +11,9 @@ Al usar la palabra clave var, se puede declarar una variable en cualquier lugar 
 del programa.
 
 ```
-var x int = 1		// Declaración con nombre, tipo de dato y valor.
-var x = 1		// Declaración sin tipo de dato.
-var x			// Declaración sin tipo de dato ni valor asignado. 
+var x int = 1		    // Declaración con nombre, tipo de dato y valor.
+var x = 1		        // Declaración sin tipo de dato.
+var x int			      // Declaración sin valor asignado.
 var x, y int = 1, 2	// Se pueden declarar múltiples variables a la vez.
 var x, y = 1, 3.14	// Se omite el tipo de dato si son tipos distintos por variable.
 ```
