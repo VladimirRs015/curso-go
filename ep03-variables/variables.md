@@ -11,11 +11,11 @@ Al usar la palabra clave var, se puede declarar una variable en cualquier lugar 
 del programa.
 
 ```
-var x int = 1		    // Declaración con nombre, tipo de dato y valor.
-var x = 1		        // Declaración sin tipo de dato.
-var x int			      // Declaración sin valor asignado.
-var x, y int = 1, 2	// Se pueden declarar múltiples variables a la vez.
-var x, y = 1, 3.14	// Se omite el tipo de dato si son tipos distintos por variable.
+var x int = 1         // Declaración con nombre, tipo de dato y valor.
+var x = 1             // Declaración sin tipo de dato.
+var x int             // Declaración sin valor asignado.
+var x, y int = 1, 2   / Se pueden declarar múltiples variables a la vez.
+var x, y = 1, 3.14    // Se omite el tipo de dato si son tipos distintos por variable.
 ```
 
 Las siguientes declaraciones no usan var, sino que usan el operador de declaración <br>
@@ -32,6 +32,7 @@ donde el tipo de dato es ambiguo, hay que usar var:
 ```
 i := 100		// Un int (entero)
 var i float64 = 100	// Un float64 (punto flotante 100.0)
+```
 
 ## Valor zero (Zero Value) en Go
 
@@ -48,15 +49,13 @@ valor zero (zero value) automáticamente. Los valores zero para cada tipo de dat
 Estos son los tipos de datos básicos de Go. Existen otros tipos de datos más complejos<br>
 como array, map, slice, struct, function, pointer, y channel. Esos los veremos luego en el curso.
 
-```
-bool
-int int8 int16 int32 int64 
-uint uint8 uint16 uint32 uint64 uintptr
-float32 float64
-complex64 complex128 
-byte (uint8)
-rune (int32)
-error
-string
-```
+- bool
+- int int8 int16 int32 int64 
+- uint uint8 uint16 uint32 uint64 uintptr
+- float32 float64
+- complex64 complex128 
+- byte (uint8)
+- rune (int32)
+- error
+- string
 
